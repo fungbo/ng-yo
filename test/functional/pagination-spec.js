@@ -1,4 +1,4 @@
-fdescribe('Pagination', function () {
+describe('Pagination', function () {
   var pages, previous, next;
   beforeEach(function () {
     browser.get('http://localhost:9000/#/pagination');
