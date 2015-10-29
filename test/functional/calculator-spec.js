@@ -25,12 +25,11 @@ describe('Protractor Demo App', function () {
   });
 
   it('should add four and six', function () {
-    add(4, 6)
+    add(4, 6);
     expect(latestResult.getText()).toEqual('10');
   });
 
   it('should have a history', function () {
-
     add(1, 2);
     add(3, 4);
 
@@ -42,5 +41,4 @@ describe('Protractor Demo App', function () {
     expect(history.last().getText()).toContain('1 + 2');
     expect(history.first().getText()).toContain('11');
   });
-
 });
