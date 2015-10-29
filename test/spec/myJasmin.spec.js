@@ -1,4 +1,5 @@
 describe('MyJasminSuite', function () {
+  'use strict';
   var a;
   it('should_equal', function () {
     a = {a1: 1, a2: 2};
@@ -69,7 +70,7 @@ describe('MyJasminSuite', function () {
     });
   });
 
-  fit("takes a long time", function(done) {
+  it("takes a long time", function(done) {
     setTimeout(function() {
       done();
     }, 3000);
