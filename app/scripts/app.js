@@ -29,6 +29,10 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/pagination', {
+        templateUrl: 'views/pagination.html',
+        controller: 'PaginationCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });
