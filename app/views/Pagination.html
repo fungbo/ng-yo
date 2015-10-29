@@ -1,8 +1,19 @@
-<h2 ng-bind="title"></h2>
+<h2 ng-bind="paginationTitle"></h2>
 <ul class="pagination">
   <li ng-class="{disabled:isFirstPage()}"><a href="#/pagination" ng-click="previous()">&laquo;</a></li>
 
   <li ng-class="{active: isSelected($index)}" ng-repeat="page in pages"><a href="#/pagination" ng-bind="page"
                                                                            ng-click="pageTo($index)"></a></li>
   <li ng-class="{disabled:isLastPage()}"><a href="#/pagination" ng-click="next()">&raquo;</a></li>
+</ul>
+
+<h2 ng-bind="pagerTitle"></h2>
+<ul class="pager">
+  <li class="previous disabled"><a href="#/pagination">Previous</a></li>
+  <li class="next"><a href="#/pagination">Next</a></li>
+</ul>
+
+<ul class="pager">
+  <li><a href="#/pagination">Previous</a></li>
+  <li><a href="#/pagination">Next</a></li>
 </ul>

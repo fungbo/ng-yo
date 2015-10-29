@@ -2,7 +2,7 @@
 
 angular.module('ngYoApp')
   .controller('PaginationCtrl', ['$scope', function ($scope) {
-    $scope.title = 'Pagination';
+    $scope.paginationTitle = 'Pagination';
     $scope.pages = [1, 2, 3, 4, 5];
 
     $scope.currentPage = 0;
