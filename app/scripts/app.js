@@ -66,6 +66,9 @@ angular
       .when('/alert', {
         templateUrl: 'views/alert.html'
       })
+      .when('/progress', {
+        templateUrl: 'views/progress.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
