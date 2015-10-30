@@ -48,6 +48,9 @@ angular
       .when('/input-group', {
         templateUrl: 'views/input-group.html'
       })
+      .when('/nav', {
+        templateUrl: 'views/nav.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
