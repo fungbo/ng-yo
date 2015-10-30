@@ -36,6 +36,9 @@ angular
       .when('/modal', {
         templateUrl: 'views/modal.html'
       })
+      .when('/dropdown', {
+        templateUrl: 'views/dropdown.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
