@@ -57,6 +57,9 @@ angular
       .when('/breadcrumb', {
         templateUrl: 'views/breadcrumb.html'
       })
+      .when('/label', {
+        templateUrl: 'views/label.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
