@@ -27,23 +27,33 @@
 
 <!--徽章-->
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#">首页<span class="badge pull-right">42</span></a></li>
+  <li class="active"><a href="#/all">首页<span class="badge pull-right">42</span></a></li>
 </ul>
 <!--徽章-->
 
 <!--警告框-->
 <div class="alert alert-warning">
-  <a href="#" class="close" data-dismiss="alert">
+  <a href="#/all" class="close" data-dismiss="alert">
     &times;
   </a>
+  <strong>警告！</strong>您的网络连接有问题。
+</div>
+
+<h3>警告框（Alert）插件 alert('close') 方法</h3>
+<div class="alert alert-success">
+  <a href="#/all" class="close" data-dismiss="alert">&times;</a>
+  <strong>成功！</strong>结果是成功的。
+</div>
+<div class="alert alert-warning">
+  <a href="#/all" class="close" data-dismiss="alert">&times;</a>
   <strong>警告！</strong>您的网络连接有问题。
 </div>
 <!--警告框-->
 
 <!--面包屑-->
 <ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">2015</a></li>
+  <li><a href="#/all">Home</a></li>
+  <li><a href="#/all">2015</a></li>
   <li class="active">10</li>
 </ol>
 <!--面包屑-->
@@ -54,10 +64,10 @@
     Default <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Java</a></li>
-    <li><a href="#">Python</a></li>
-    <li><a href="#">JavaScript</a></li>
-    <li><a href="#">Ruby</a></li>
+    <li><a href="#/all">Java</a></li>
+    <li><a href="#/all">Python</a></li>
+    <li><a href="#/all">JavaScript</a></li>
+    <li><a href="#/all">Ruby</a></li>
   </ul>
 </div>
 <!--按钮下拉-->
@@ -90,20 +100,20 @@
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
     <li role="presentation">
-      <a role="menuitem" tabindex="-1" href="#">Java</a>
+      <a role="menuitem" tabindex="-1" href="#/all">Java</a>
     </li>
     <li role="presentation">
-      <a role="menuitem" tabindex="-1" href="#">Ruby</a>
+      <a role="menuitem" tabindex="-1" href="#/all">Ruby</a>
     </li>
     <li role="presentation">
-      <a role="menuitem" tabindex="-1" href="#">Python</a>
+      <a role="menuitem" tabindex="-1" href="#/all">Python</a>
     </li>
     <li role="presentation" class="divider"></li>
     <li role="presentation">
-      <a role="menuitem" tabindex="-1" href="#">Bootstrap</a>
+      <a role="menuitem" tabindex="-1" href="#/all">Bootstrap</a>
     </li>
     <li role="presentation">
-      <a role="menuitem" tabindex="-1" href="#">Angular</a>
+      <a role="menuitem" tabindex="-1" href="#/all">Angular</a>
     </li>
   </ul>
 </div>
@@ -168,27 +178,27 @@
 <!--导航-->
 <p>Nav-tabs</p>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Java</a></li>
-  <li><a href="#">Python</a></li>
-  <li><a href="#">Ruby</a></li>
-  <li><a href="#">JavaScript</a></li>
+  <li class="active"><a href="#/all">Home</a></li>
+  <li><a href="#/all">Java</a></li>
+  <li><a href="#/all">Python</a></li>
+  <li><a href="#/all">Ruby</a></li>
+  <li><a href="#/all">JavaScript</a></li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#/nav">
       Perl<span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="#">Java</a></li>
-      <li><a href="#">Python</a></li>
-      <li><a href="#">Ruby</a></li>
-      <li><a href="#">JavaScript</a></li>
+      <li><a href="#/all">Java</a></li>
+      <li><a href="#/all">Python</a></li>
+      <li><a href="#/all">Ruby</a></li>
+      <li><a href="#/all">JavaScript</a></li>
     </ul>
   </li>
 </ul>
 
 <p>Nav-pills</p>
 <ul class="nav nav-pills">
-  <li class="active"><a href="#">Home</a></li>
+  <li class="active"><a href="#/">Home</a></li>
   <li><a href="#">Java</a></li>
   <li><a href="#">Python</a></li>
   <li><a href="#">Ruby</a></li>
@@ -224,7 +234,90 @@
 </nav>
 <!--导航栏-->
 
+<!--轮番-->
+<div id="myCarousel" class="carousel slide">
+  <!-- 轮播（Carousel）指标 -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- 轮播（Carousel）项目 -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/wp-content/uploads/2014/07/slide1.png" alt="First slide">
+      <div class="carousel-caption">标题 1</div>
+    </div>
+    <div class="item">
+      <img src="/wp-content/uploads/2014/07/slide2.png" alt="Second slide">
+      <div class="carousel-caption">标题 2</div>
+    </div>
+    <div class="item">
+      <img src="/wp-content/uploads/2014/07/slide3.png" alt="Third slide">
+      <div class="carousel-caption">标题 3</div>
+    </div>
+  </div>
+  <!-- 轮播（Carousel）导航 -->
+  <a class="carousel-control left" href="#myCarousel"
+     data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel"
+     data-slide="next">&rsaquo;</a>
+</div>
+<!--轮番-->
 
-
-
+<!--折叠-->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion"
+           href="#/all/#collapseOne">
+          点击我进行展开，再次点击我进行折叠。第 1 部分
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+        vice lomo.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion"
+           href="#/all/#collapseTwo">
+          点击我进行展开，再次点击我进行折叠。第 2 部分
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+        vice lomo.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion"
+           href="#/all/#collapseThree">
+          点击我进行展开，再次点击我进行折叠。第 3 部分
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+        vice lomo.
+      </div>
+    </div>
+  </div>
+</div>
+<!--折叠-->
 
