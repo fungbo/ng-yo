@@ -33,6 +33,9 @@ angular
         templateUrl: 'views/pagination.html',
         controller: 'PaginationCtrl',
       })
+      .when('/modal', {
+        templateUrl: 'views/modal.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
