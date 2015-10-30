@@ -54,6 +54,9 @@ angular
       .when('/nav-bar', {
         templateUrl: 'views/nav-bar.html'
       })
+      .when('/breadcrumb', {
+        templateUrl: 'views/breadcrumb.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
