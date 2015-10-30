@@ -39,6 +39,9 @@ angular
       .when('/dropdown', {
         templateUrl: 'views/dropdown.html'
       })
+      .when('/btn-group', {
+        templateUrl: 'views/btn-group.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
