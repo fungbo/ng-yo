@@ -63,6 +63,9 @@ angular
       .when('/badge', {
         templateUrl: 'views/badge.html'
       })
+      .when('/alert', {
+        templateUrl: 'views/alert.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
